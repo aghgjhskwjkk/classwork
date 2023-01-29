@@ -1,67 +1,129 @@
-<!DOCTYPE html>
+</html><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Webpage Structure</title>
     <style>
-        .main{
-            background-color: chartreuse;
-            height: 500px;
-            color: white;
-            font-size: 50px;
-            display: block;
-        }
-        
-        @media(min-width:320px) and (max-width:480px)
-        { 
-            #one{
-            display: block;
-            background-color:blue;}
-        }
-        @media(min-width:520px) and (max-width:680px)
-        { 
-            #two{
-            display: block;
-            background-color:red;}
-        }
-        @media(min-width:720px) and (max-width:880px)
-        { 
-            #three{
-            display: block;
-            background-color:brown;}
-        }
-        @media(min-width:920px) and (max-width:1080px)
-        { 
-            #four{
-            display: block;
-            background-color:violet;}
-        }
-        @media(min-width:1090px) and (max-width:2000px)
-        { 
-            #five{
-            display: block;
-            background-color:aqua;}
+        /* Header  */
+        table.header{
+            width: 100%;
+            border: 2 px solid blue;
+            background-color: white;
         }
 
+        /* H1 Headings  */
+        h1{
+            text-align: center;
+            font-size: 50px;
+        }
+
+        /* box Home and Footer  */
+        .box{
+            height: 400px;
+            width: 100%;
+            background-color: skyblue;
+        }
+
+        /* Service */
+        .service td{
+            padding: 10px;
+        }
+        .service img{
+            height: 200px;
+            width: 300px;
+        }
+        /* Contant us  */
+        .contant_us{
+            background-color: rgb(255, 0, 204);
+            height: 300px;
+            width: 500px;
+            
+        }
+        /* About  */
+        .about_us td{
+            padding: 20px;
+        }
+        .about_us img{
+            height: 400px;
+            width: 550px;
+        }
     </style>
 </head>
 <body>
-    <div class="main" id="one">
-        mobile display
+    <center>
+    <!-- Header  -->
+    <table class="header" border="">
+        <tr>
+            <td><a href="">Home</a></td>
+            <td><a href="">About</a></td>
+            <td><a href="">Services</a></td>
+            <td><a href="">Contant Us</a></td>
+        </tr>
+    </table>
+
+    <!-- Home  -->
+    <div class="box"></div>
+
+    <!-- About us -->
+    <h1>About Us</h1>
+    <table class="about_us">
+        <tr>
+            <td><img src="assets/images/tips-customer-service-640x427.jpg"></td>
+            <td><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae totam non labore, earum saepe maxime consectetur quas in dicta unde reiciendis numquam minus eveniet. Asperiores vero ratione dolor cupiditate, eos, doloremque sint impedit quia qui cum dolorem, sunt at quidem atque maiores aperiam exercitationem quisquam. Minus velit animi, deserunt reprehenderit dignissimos voluptas nobis eos vero nostrum consequatur doloribus exercitationem laboriosam perspiciatis placeat porro repudiandae eveniet sit? Deserunt veritatis vel fugiat ea quo quidem culpa, nesciunt tempore illum, nobis laborum aspernatur quae sapiente pariatur earum inventore delectus nam blanditiis explicabo est asperiores maiores? Pariatur ut quia quam minima perspiciatis inventore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia magni assumenda quas nesciunt aperiam nam quis suscipit omnis corporis distinctio. Quasi ipsa nobis suscipit dolorum? Assumenda itaque omnis neque, praesentium eos natus accusamus a consequatur distinctio atque dignissimos nostrum officia ratione molestias temporibus similique dolor repellendus earum. Numquam officia necessitatibus beatae natus tempora, suscipit vitae doloribus ducimus reprehenderit maxime consequatur saepe omnis quaerat! Quaerat sapiente non, assumenda mollitia illum architecto ut neque in ex necessitatibus voluptatibus minus nam quasi ratione modi quisquam laudantium dolore nostrum soluta, facere sunt nobis maiores. Sint exercitationem voluptate ipsa vel dicta dolore et itaque dolores.
+            </p></td>
+        </tr>
+    </table>
+
+    <!-- services  -->
+        <h1>Services</h1>
+        <table border="5" class="servish">
+            <tr>
+                <td><img src="assets/images/tips-customer-service-640x427.jpg"></td>
+                <td><img src="assets/images/tips-customer-service-640x427.jpg"></td>
+                <td><img src="assets/images/tips-customer-service-640x427.jpg"></td>
+            </tr>
+            <tr>
+                <td><img src="assets/images/tips-customer-service-640x427.jpg"></td>
+                <td><img src="assets/images/tips-customer-service-640x427.jpg"></td>
+                <td><img src="assets/images/tips-customer-service-640x427.jpg"></td>
+            </tr>
+            <tr>
+                <td><img src="assets/images/tips-customer-service-640x427.jpg"></td>
+                <td><img src="assets/images/tips-customer-service-640x427.jpg"></td>
+                <td><img src="assets/images/tips-customer-service-640x427.jpg"></td>
+            </tr>
+        </table>
+
+        <!-- Contant us  -->
+        <h1>Contant Us</h1>
+        <div>
+            <table class="contant_us">
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" placeholder="Enter Your Name"</td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" placeholder="Enter Your First Name"</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" placeholder="Enter Your Email "</td>
+                </tr>
+                <tr>
+                    <td>Phone No</td>
+                    <td><input type="number" placeholder="Enter Your Phone No "</td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>Male<input type="radio" name="A">Female<input type="radio" name="A"></td>
+                </tr>
+                <td><input type="button" value="Register"></td>
+                
+            </table>
         </div>
-    <div class="main" id="two">
-        ipad
-        </div>
-    <div class="main" id="three">
-        tablets
-        </div>
-    <div class="main" id="four">
-        4k screen
-        </div>
-    <div class="main" id="five">
-        desktop
-        </div>
-</body>
-</html>
+
+        <!-- footer  -->
+        <div class="box"></div>
